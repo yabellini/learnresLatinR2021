@@ -123,94 +123,114 @@ class: chapter-slide
 
 # ¿Qué dicen los estudiantes?
 
-Agrega algo de texto aquí
+Encuesta anónima, no obligatoria al final de cada clase preguntando lo que más y lo que menos les gustó. 
 
-## Header 2
+## Lo que más les gustó 
 
-Agrega algo de texto aquí
+Estas son las respuestas relacionadas a los tutoriales
 
-### Header 3
+1. Alternar teoría-practica-ejemplos    __17%__
+1. Materiales   __16%__
+1. Ejercicios en grupo    __14%__
+1. Practica interactiva/tutorial    __8%__
 
-```{r}
-# Agrega tu código
-seq(1:5)
-```
+---
+# ¿Qué dicen los estudiantes?
+
+## Lo que cambiarían/lo que menos les gustó
+
+Estas son las respuestas relacionadas a los tutoriales
+
+1. Más tiempo para la práctica __26%__
+1. Más practica __24%__
+1. Problemas de instalación __18%__
+
+
 ---
 
 class: chapter-slide
 
-# Capítulo nuevo
+# ¿Qué tutoriales hay disponibles ?
 
 ---
 
-## Crea algunas gráficas
+## Visualización
 
-Recomendamos usar el paquete [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html) para crear gráficas amigables con las personas con daltonismo. 
+![Tutorial intro a ggplot2 para 30 días de gráficos. Mini tutorial para generar gráficos en R festejando a Florence Nightingale](Visualizacion.png)
+<br/> Introduce la gramática de los gráficos y su implementación en {ggplot2}.  
 
-Veamos cómo lucen algunas gráficas con diversos tipos de dificultades visuales usando [colorblindr](https://github.com/clauswilke/colorblindr):
-
-```{r, echo=FALSE, message=FALSE}
-library(datos)
-library(ggplot2)
-library(colorblindr)
-library(viridis)
-```
-
+Uso: como práctica luego de introducir el tema y como repaso. Es uno de los paquete que se usa para auto aprendizaje (fuera de la materia).
 ---
-class: middle, center
 
-```{r,echo=FALSE,warning=FALSE,message=FALSE,fig.show="hold",out.width="50%",fig.alt= "Se muestran gráficas de densidad con los datos de la masa corporal de pinguinos de las especies Adelie, Chinstrap y Gentoo del conjunto de datos pinguinos del paquete en español datos, separados por color de acuerdo con la especie, usando la escala de color automática de ggplot2. En la columna izquierda se están utilizando los colores rosa, verde y azul. En la columna derecha se muestra la simulación de cómo se vería la gráfica de la izquierda considerando cuatro deficiencias visuales: Deutanomalía,Protanomalía, Tritanomalía y Desaturado."}
-fig <- ggplot(pinguinos, aes(masa_corporal_g, fill = especie)) + 
-  geom_density(alpha = 0.7) + 
-  theme_bw(base_size = 30) + 
-  theme(legend.position = c(0.8, 0.89),
-        legend.margin = margin(),
-        legend.title = element_blank()) 
+## Trabajo con texto 
 
-fig
-cvd_grid(ggplot(pinguinos, aes(masa_corporal_g, fill = especie)) + 
-           geom_density(alpha = 0.7) +  
-           theme_bw(base_size = 18) +
-           theme(legend.position = c(0.7, 0.85),
-                 legend.margin = margin(),
-                 legend.title = element_blank(),
-                 legend.text = element_text(size = 12),
-                 legend.key.size = unit(8,'points')) 
-)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you are interested in getting started with text mining in Spanish using <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> and tidytext, check out this learnr tutorial built by <a href="https://twitter.com/yabellini?ref_src=twsrc%5Etfw">@yabellini</a>! 🥳 <a href="https://t.co/pm50H7p3MH">https://t.co/pm50H7p3MH</a></p>&mdash; Julia Silge (@juliasilge) <a href="https://twitter.com/juliasilge/status/1406070462669418499?ref_src=twsrc%5Etfw">June 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-```
 
+<br/> Introduce conceptos de tidytext y el paquete para trabajar texto ordenado.
+
+Uso: como práctica luego de introducir el tema y como tarea.
+
+También es un paquete que se usa para auto aprendizaje.
+---
+
+## Iteración
+
+![Tutorial de introducción a la iteración con R. ](Iteracion.png)
+<br/> Paquete con dos tutoriales para aprender iteración en R (for y map)
+
+Uso: como práctica y luego de introducir el tema y como tarea.
+
+También es un paquete que se usa para auto aprendizaje.
 
 ---
 
-Ahora usemos colores más amigables con scale_fill_viridis()
+class: chapter-slide
 
-```{r,echo=FALSE,warning=FALSE,message=FALSE,fig.show="hold",out.width="50%",fig.alt="Se muestran gráficas de densidad con los datos de la masa corporal de pinguinos de las especies Adelie, Chinstrap y Gentoo del conjunto de datos pinguinos del paquete en español datos separados por color de acuerdo con la especie, con ayuda de la escala viridis. En la columna izquierda se están utilizando los colores morado, esmeralda y amarillo. En la columna derecha se muestra la simulación de cómo se vería la gráfica de la izquierda considerando cuatro deficiencias visuales: Deutanomalía,Protanomalía, Tritanomalía y Desaturado."}
-fig2 <- ggplot(pinguinos, aes(masa_corporal_g, fill = especie)) + 
-  geom_density(alpha = 0.7) + 
-  theme_bw(base_size = 30) + 
-  theme(legend.position = c(0.8, 0.89),
-        legend.margin = margin(),
-        legend.title = element_blank()) +
-  scale_fill_viridis(discrete = TRUE)
-
-fig2
-cvd_grid(ggplot(pinguinos, aes(masa_corporal_g, fill = especie)) + 
-           geom_density(alpha = 0.7) +  
-           theme_bw(base_size = 18) +
-           theme(legend.position = c(0.7, 0.85),
-                 legend.margin = margin(),
-                 legend.title = element_blank(),
-                 legend.text = element_text(size = 12),
-                 legend.key.size = unit(8,'points')) + 
-           scale_fill_viridis(discrete = TRUE) 
-)
-```
+# ¿Dónde busco más información?
 
 ---
 
-# Alt-text
+## Sitio web en español
 
-Recuerda agregar texto alternativo a tus figuras, describiendo los elementos que contienen y el mensaje que deseas transmitir con ellas.
+Aprendiendo learnr: https://learning-learnr.netlify.app/ 
 
-Puedes usar la opción fig.alt del chunk de R para agregar el texto alternativo.
+## Más recursos en español
+
+Learn R 4 Free: https://www.learnr4free.com/es/index.html
+
+---
+class: middle, inverse
+
+.pull-left[
+# ¡Gracias!
+# Thank you!
+# ¡Obrigada!
+<br><br>
+## `r rmarkdown::metadata$author`  
+
+### `r rmarkdown::metadata$institute`
+] <!--end of pull left -->
+
+.pull-right[
+.right[
+<img style="border-radius: 50%;" 
+src="yanina_bellini_saibene.jpg"
+alt="Foto de medio cuerpo de Yani mirando de frente y sonriendo con el pelo marrón atado, una campera lila y una remera blanca y negra"
+width="250px"
+/>
+
+
+[`r fa_i("twitter")` @yabellini](https://twitter.com/yabellini)<br/>
+[`r fa_i("paper-plane")` yabellini@gmail.com](mailto:yabellini@gmail.com)<br>
+
+] <!--end of right -->
+] <!--end of pull right -->
+
+???
+¡Gracias por participar en esta charla!
+Pueden encontrar mi información de contacto en esta diapositiva si desean ponerse en contacto, y con gusto responderé cualquier pregunta.
+
+This slide contains
+- `.pull-left[]` and `.pull-right[]` classes
+- `.right[]` class
