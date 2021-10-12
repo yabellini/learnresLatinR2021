@@ -157,11 +157,9 @@ class: chapter-slide
 ## Visualización
 
 ![Tutorial intro a ggplot2 para 30 días de gráficos. Mini tutorial para generar gráficos en R festejando a Florence Nightingale](Visualizacion.png)
-<br/> Introduce la gramática de los gráficos y como se implementa en {ggplot2}.  
+<br/> Introduce la gramática de los gráficos y su implementación en {ggplot2}.  
 
-Uso: como práctica luego de introducir el tema y como repaso.
-
-Es uno de los paquete que se usa para auto aprendizaje (fuera de la materia).
+Uso: como práctica luego de introducir el tema y como repaso. Es uno de los paquete que se usa para auto aprendizaje (fuera de la materia).
 ---
 
 ## Trabajo con texto 
@@ -201,3 +199,38 @@ Aprendiendo learnr: https://learning-learnr.netlify.app/
 
 Learn R 4 Free: https://www.learnr4free.com/es/index.html
 
+---
+class: middle, inverse
+
+.pull-left[
+# ¡Gracias!
+# Thank you!
+# ¡Obrigada!
+<br><br>
+## `r rmarkdown::metadata$author`  
+
+### `r rmarkdown::metadata$institute`
+] <!--end of pull left -->
+
+.pull-right[
+.right[
+<img style="border-radius: 50%;" 
+src="yanina_bellini_saibene.jpg"
+alt="Foto de medio cuerpo de Yani mirando de frente y sonriendo con el pelo marrón atado, una campera lila y una remera blanca y negra"
+width="250px"
+/>
+
+
+[`r fa_i("twitter")` @yabellini](https://twitter.com/yabellini)<br/>
+[`r fa_i("paper-plane")` yabellini@gmail.com](mailto:yabellini@gmail.com)<br>
+
+] <!--end of right -->
+] <!--end of pull right -->
+
+???
+¡Gracias por participar en esta charla!
+Pueden encontrar mi información de contacto en esta diapositiva si desean ponerse en contacto, y con gusto responderé cualquier pregunta.
+
+This slide contains
+- `.pull-left[]` and `.pull-right[]` classes
+- `.right[]` class
