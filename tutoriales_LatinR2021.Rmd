@@ -178,9 +178,26 @@ También es un paquete que se usa para auto aprendizaje.
 
 ## Iteración
 
-![alt tex](Iteracion.png)
+![Tutorial de introducción a la iteración con R. ](Iteracion.png)
+<br/> Paquete con dos tutoriales para aprender iteración en R (for y map)
+
+Uso: como práctica y luego de introducir el tema y como tarea.
+
+También es un paquete que se usa para auto aprendizaje.
+
 ---
 
 class: chapter-slide
 
 # ¿Dónde busco más información?
+
+---
+
+## Sitio web en español
+
+Aprendiendo learnr: https://learning-learnr.netlify.app/ 
+
+## Más recursos en español
+
+Learn R 4 Free: https://www.learnr4free.com/es/index.html
+
