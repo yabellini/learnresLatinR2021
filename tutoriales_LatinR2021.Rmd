@@ -33,7 +33,7 @@ width="250px"
 **Yanina Bellini Saibene**<br/>
 _MetaDocencia - INTA_
 
-[`r fa_i("twitter")` @yabellini](https://twitter.com/yabellini)<br/>
+
 [`r fa_i("paper-plane")` yabellini@gmail.com](mailto:yabellini@gmail.com)<br>
 
 ???
@@ -164,7 +164,7 @@ Uso: como práctica luego de introducir el tema y como repaso. Es uno de los paq
 
 ## Trabajo con texto 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you are interested in getting started with text mining in Spanish using <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> and tidytext, check out this learnr tutorial built by <a href="https://twitter.com/yabellini?ref_src=twsrc%5Etfw">@yabellini</a>! 🥳 <a href="https://t.co/pm50H7p3MH">https://t.co/pm50H7p3MH</a></p>&mdash; Julia Silge (@juliasilge) <a href="https://twitter.com/juliasilge/status/1406070462669418499?ref_src=twsrc%5Etfw">June 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+>If you are interested in getting started with text mining in Spanish using #rstats and tidytext, check out this learnr tutorial built by @yabellini! 🥳 - Julia Silge (@juliasilge) - June 19, 2021
 
 
 <br/> Introduce conceptos de tidytext y el paquete para trabajar texto ordenado.
@@ -221,7 +221,6 @@ width="250px"
 />
 
 
-[`r fa_i("twitter")` @yabellini](https://twitter.com/yabellini)<br/>
 [`r fa_i("paper-plane")` yabellini@gmail.com](mailto:yabellini@gmail.com)<br>
 
 ] <!--end of right -->
